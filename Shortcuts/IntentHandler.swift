@@ -19,9 +19,13 @@ import Intents
 class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling {
     
     override func handler(for intent: INIntent) -> Any {
+
+        print("YO!")
         switch intent {
         case is MakeUppercaseIntent:
-            return MakeUppercaseIntentHandler()
+            return MakeUppercaseHandler()
+        case is RenameFilesIntent:
+            return RenameFilesHandler()
         default:
             fatalError("No handler for this intent")
         }

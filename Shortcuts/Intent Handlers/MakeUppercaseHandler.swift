@@ -7,7 +7,7 @@
 
 import Intents
 
-class MakeUppercaseIntentHandler: NSObject, MakeUppercaseIntentHandling {
+class MakeUppercaseHandler: NSObject, MakeUppercaseIntentHandling {
 
     func handle(intent: MakeUppercaseIntent, completion: @escaping (MakeUppercaseIntentResponse) -> Void) {
         if let inputText = intent.text {

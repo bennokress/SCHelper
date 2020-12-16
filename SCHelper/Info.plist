@@ -23,6 +23,7 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>MakeUppercaseIntent</string>
+		<string>RenameFilesIntent</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
